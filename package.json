@@ -1,0 +1,26 @@
+{
+  "name": "amosya",
+  "version": "1.0.0",
+  "main": "build.js",
+  "repository": "https://github.com/devthings-net/amosya.git",
+  "author": "Steve Mangelschots <smangelschots@hotmail.com>",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.8",
+    "esbuild": "^0.15.13",
+    "typescript": "^4.8.4",
+    "esbuild-plugin-sass": "^1.0.1",
+    "esbuild-sass-plugin": "^2.4.0"
+  },
+  "scripts": {
+    "build": "node build.js",
+    "buildjs": "esbuild src/app/main.tsx --bundle --outfile=public/out.js",
+    "buildcss": "esbuild sass/index.scss --bundle --outfile=public/index.css"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
